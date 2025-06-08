@@ -1,0 +1,8 @@
+# Made by Terpz710 :p
+
+# List of items to block
+# Examples: diamond_sword, iron_pickaxe, bow, netherite_helmet
+blocked-items:
+  - diamond_sword
+  - bow
+  - iron_pickaxe
