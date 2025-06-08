@@ -5,13 +5,13 @@ declare(strict_types=1);
 namespace wavycraft\noitemenchant;
 
 use pocketmine\event\Listener;
-use pocketmine\event\player\PlayerEnchantItemEvent;
+use pocketmine\event\player\PlayerItemEnchantEvent;
 
 use pocketmine\item\StringToItemParser;
 
 class EventListener implements Listener {
 
-    public function cancelEnchant(PlayerEnchantItemEvent $event) : void{
+    public function cancelEnchant(PlayerItemEnchantEvent $event) : void{
         $item = $event->getItem();
 
         foreach (NoItemEnchant::$blocked_items as $blocked_item) {
